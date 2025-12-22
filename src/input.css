@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@theme {
+    --padding-body: 195px;
+    --background-image-hero: url("../img/hero-bg.jpg")
+}
+/* primary color: #b1976b brown... change this to match the company's logo later */
