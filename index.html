@@ -14,21 +14,22 @@
             <div class="absolute inset-0 bg-gray-900/70"></div>
 
             <!-- content -->
-            <div class="relative md:px-body text-white flex flex-col h-full px-12">
+            <div class="relative md:px-desktop px-mobile text-white flex flex-col h-full pb-14">
                 <nav class="md:py-9 py-4 row-span-1 md:mb-0 mb-10">
                     <div class="flex justify-between w-full items-center">
                         <div>
                             <img src="" alt="logo">
                         </div>
-                        <ul class="gap-10 flex-row hidden md:flex">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Practice Area</a></li>
+                        <ul class="gap-10 flex-row hidden md:flex ml-auto items-center">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="">Services</a></li>
                             <li><a href="">Contact</a></li>
                             <!-- <li><a href=""></a></li> Think of something to add here-->
-                            <li><button type="button">BOOK APPOINTMENT</button></li>
+                            <li>
+                                <button type="button" class="px-6 py-3 rounded-md bg-secondary text-primary font-semibold shadow-md hover:bg-[#C3A574] hover:shadow-lg active:scale-95 transition-all duration-200 cursor-pointer">BOOK APPOINTMENT</button>
+                            </li>
                         </ul>
-                        <div></div>
                     </div>
                 </nav>
                 <!-- mobile nav -->
@@ -44,8 +45,7 @@
                 </nav>
                 <div class="h-full md:w-1/2 grid mt-10">
                     <div class="mt-auto">
-                        <hr class="border-gray-600">
-                        <p class="mb-4 font-sans text-[0.8rem]">Committed to Helping Our Clients Succeed</p>
+                        <p class="mb-4 flex items-center gap-3 text-secondary before:content-[''] before:block before:w-8 before:h-px before:bg-secondary font-sans text-[1rem]">Committed to Helping Our Clients Succeed</p>
                         <h1 class="md:text-5xl font-bold leading-normal font-serif text-[2rem]">You Need a Reliable Law Firm That Helps Deal with Your Family Matters</h1>
                         <!-- add a button here for the mobile view  -->
                     </div>
@@ -59,12 +59,15 @@
 
                         <div class="flex justify-between py-5 flex-col md:flex-row gap-5 md:gap-0">
                             
-                            <div class="flex flex-col">
+                            <div class="flex flex-col gap-2.5">
                                 <!-- EMOJI here -->
-                                <span class="text-sm">📍 Your Location</span>
+                                <span class="text-sm">📍 Our Location</span>
+                                <span class="text-3xl">Indorama, Eleme</span>
                             </div>
-                            <div class="flex flex-col">
-                                <span class="text-sm">📞 +123 456 7890</span>
+                            <hr class="md:hidden border-gray-600 w-full">
+                            <div class="flex flex-col gap-2.5">
+                                <span class="text-sm">📞 Give us a call</span>
+                                <span class="text-3xl">+234 900 000 7890</span>
                             </div>
                         </div>
                     </div>
@@ -76,37 +79,36 @@
         
         <main>
             <!-- Why choose us section below -->
-            <section>
-                <div class="px-body">
+            <section class="my-14">
+                <div class="md:px-desktop px-mobile">
                     <article>
                         <header>
-                            <div>
-                                <hr>
-                                <p></p>
+                            <div class="mb-6">
+                                <p class="mb-4 flex items-center gap-3 text-secondary before:content-[''] before:block before:w-8 before:h-px before:bg-secondary font-sans text-[1rem]">Professional Services</p>
                             </div>
                             <div>
-                                <h2></h2>
+                                <h2 class="text-2xl font-bold mb-7">You've Come To The Right Place</h2>
                                 <p>
-
+                                    A descriptive paragraph that tells clients how good you are and proves that you are the best choice that they've made. This paragraph is also for those who are looking out for a reliable attorney. You can use a few enticing words and flaunt your capabilities that will attract future clients and encourage them to hire you right away. List down your expertise and experience to prove you are the best.   
                                 </p>
                             </div>
-                            <div>
+                            <div class="flex gap-10 md:gap-3 md:flex-row flex-col mt-10">
                                 <div>
                                     <!-- icon below -->
-                                    <h3></h3>
-                                    <p></p>
+                                    <h3>Years Of Experience</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio.</p>
                                 </div>
                                 <div>
                                     <!-- icon below -->
-                                    <h3></h3>
-                                    <p></p>
+                                    <h3>Defining success</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio.</p>
                                 </div>
                             </div>
                         </header>
                     </article>
 
                     <div>
-                        <!-- clients portrait image -->
+                        <!-- clients portrait image or something-->
                         <img src="" alt="">
                     </div>
                 </div>
@@ -117,128 +119,165 @@
                 
 
             </section>
-            <!-- Practice area section below -->
-            <section>
+            <!-- Practice area or services rendered section below -->
+            <section class="pb-14 bg-[#c2b59f46]">
 
-                <div class="px-body">
-                    <h2></h2>
-                    <div>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                <div class="md:px-desktop px-mobile py-12">
+                    <h2 class="text-2xl font-bold text-center">Our Practice Areas</h2>
+                    <div class="grid md:grid-cols-3 grid-cols-1 gap-10 pt-6 px-3">
+                        <div>
+                            <div>
+                                <!-- icon here -->
+                            </div>
+                            <div>
+                                <h3 class="text-h3 font-bold">Grinding</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <!-- icon here -->
+                            </div>
+                            <div>
+                                <h3 class="text-h3 font-bold">Cutting</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <!-- icon here -->
+                            </div>
+                            <div>
+                                <h3 class="text-h3 font-bold">Polishing</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <!-- icon here -->
+                            </div>
+                            <div>
+                                <h3 class="text-h3 font-bold">Finishing</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <!-- icon here -->
+                            </div>
+                            <div>
+                                <h3 class="text-h3 font-bold">Finishing</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-10">
+                        <button type="button" class="mt-10 px-6 py-3 rounded-md bg-secondary text-primary font-bold shadow-md hover:bg-[#C3A574] hover:shadow-lg active:scale-95 transition-all duration-200 cursor-pointer">SEE ALL SERVICES →</button>
                     </div>
                 </div>
 
             </section>
             <!-- why choose us section below -->
-            <section>
-
-                <div class="px-body">
-                    <article>
-                        <div>
-                            <hr>
-                            <p></p>
-                            <h2></h2>
+            <section class="relative bg-why-choose-us bg-cover bg-center bg-no-repeat bg-fixed text-white md:py-20 py-16 pb-14">
+                <div class="absolute inset-0 bg-gray-900/70"></div>
+                <div class="md:px-desktop px-mobile relative">
+                    <article class="mb-14">
+                        <div class="mb-12">
+                            <p class="mb-4 flex items-center gap-3 text-secondary before:content-[''] before:block before:w-8 before:h-px before:bg-secondary font-sans text-[1rem]">Professional And Experienced</p>
+                            <h2 class="text-2xl font-bold mt-3">Why Choose Us</h2>
                         </div>
                         
-                        <div>
+                        <div class="grid grid-cols-1 gap-10">
                             <div>
-                                <div></div>
+                                <h3 class="md:text-2xl text-5xl font-bold">01</h3>
                                 <div>
-                                    <h3></h3>
-                                    <p></p>
+                                    <h3 class="text-h3 ">Excellent Track Record</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, officia? Commodi, natus?</p>
                                 </div>
                             </div>
                             <div>
-                                <div></div>
+                                <h3 class="md:text-2xl text-5xl font-bold">02</h3>
                                 <div>
-                                    <h3></h3>
-                                    <p></p>
+                                    <h3 class="text-h3 ">Transparent Fees</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, officia? Commodi, natus?</p>
                                 </div>
                             </div>
                             <div>
-                                <div></div>
+                                <h3 class="md:text-2xl text-5xl font-bold">03</h3>
                                 <div>
-                                    <h3></h3>
-                                    <p></p>
+                                    <h3 class="text-h3 ">Unparalleled Customer Service</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, officia? Commodi, natus?</p>
                                 </div>
                             </div>
                         </div>
                     </article>
 
-                    <div>
-                        <div>
-                            <h3></h3>
-                            <p></p>
+                    <div class="grid md:grid-cols-2 grid-cols-1 md:gap-10 border border-zinc-600 text-center">
+                        <div class="border-b border-b-zinc-600 py-8">
+                            <h3 class="text-h3 mb-2.5">2000+</h3>
+                            <p class="text-secondary">Happy Clients</p>
                         </div>
-                        <div>
-                            <h3></h3>
-                            <p></p>
+                        <div class="border-b border-b-zinc-600 py-8">
+                            <h3 class="text-h3 mb-2.5">7623+</h3>
+                            <p class="text-secondary">Finished Projects</p>
                         </div>
-                        <div>
-                            <h3></h3>
-                            <p></p>
+                        <div class="border-b border-b-zinc-600 py-8">
+                            <h3 class="text-h3 mb-2.5">20+</h3>
+                            <p class="text-secondary">Qualified Staff</p>
                         </div>
-                        <div>
-                            <h3></h3>
-                            <p></p>
+                        <div class="py-8">
+                            <h3 class="text-h3 mb-2.5">1400+ Hrs</h3>
+                            <p class="text-secondary">Hours Of Work Done</p>
                         </div>
                     </div>
                 </div>
 
             </section>
             <!-- CTA section -->
-             <section>
-                <div class="text-center flex flex-col">
-                    <h4></h4>
-                    <h2></h2>
-                    <hr>
-                    <span></span>
-                    <hr>
-                    <h2></h2>
-                    <button></button>
+             <section class="text-center py-12">
+                <div class="text-center font-bold flex flex-col gap-6">
+                    <h3 class="text-h3">Call us 24/7</h3>
+                    <h2 class="text-3xl"><a href="tel:+2349000000000">+234-900-000-0000</a></h2>
+                    <span class="flex justify-center items-center gap-3 text-gray-500 before:content-[''] before:block before:w-14 before:h-px before:bg-secondary after:content-[''] after:block after:w-14 after:h-px after:bg-secondary">OR</span>
+                    <h2 class="text-2xl">GET YOUR FREE CONSULTATION TODAY</h2>
+                    <a href="mailto:"><button class="font-normal mt-10 px-6 py-3 rounded-md bg-secondary text-primary shadow-md hover:bg-[#C3A574] hover:shadow-lg active:scale-95 transition-all duration-200 cursor-pointer">Send Us A Mail</button></a>
                 </div>
              </section>
             <!-- testimonial -->
               <!-- all aligned to the right on desktop -->
-            <section>
+            <section class="relative bg-testimonials bg-cover bg-center bg-no-repeat bg-fixed md:py-20 py-16 pb-14 text-white">
+                <div class="absolute inset-0 bg-gray-900/70 backdrop-blur-xs"></div>
+                <div class="md:px-desktop px-mobile flex relative">
 
-                <div class="px-body flex">
-
-                    <div class="w-full h-full">
+                    <div class="w-full h-full hidden md:block">
                     <!-- empty container for left hand side and make use of grid -->
                     </div>
 
                     <article>
-                        <div>
-                            <hr>
-                            <p></p>
-                            <h2></h2>
+                        <div class="mb-9">
+                            <p class="mb-4 flex items-center gap-3 text-secondary before:content-[''] before:block before:w-8 before:h-px before:bg-secondary font-sans text-[1rem]">We take pride in our work and the satisfaction of our clients. </p>
+                            <h2 class="text-2xl font-bold">What Our Clients Say</h2>
                         </div>
                         <div>
-                            <div class="border-b-2 py-2.5">
-                                <div></div>
-                                <p>
-                                <div class="flex gap-3 items-center">
+                            <div class="border-b py-10 border-b-zinc-600">
+                                <div><!-- quotation mark --></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero distinctio nulla, fugit necessitatibus debitis repellendus voluptates tempore error quia culpa officia quo impedit laborum dolorem eum, rerum, dicta placeat.</p>
+                                <div class="flex gap-3 items-center mt-3.5">
                                     <div><img class="h-6 w-6 rounded-[50%]" src="" alt=""></div>
                                     <div class="flex flex-col gap-1.5">
-                                        <h5></h5>
-                                        <p></p>
+                                        <h5>Kennith Onyeka</h5>
+                                        <p>Rivers State</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="border-b-2 py-2.5">
-                                <div></div>
-                                <p>
-                                <div class="flex gap-3 items-center">
+                            <div class="border-b py-10 border-b-zinc-600">
+                                <div><!-- quotation mark --></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero distinctio nulla, fugit necessitatibus debitis repellendus voluptates tempore error quia culpa officia quo impedit laborum dolorem eum, rerum, dicta placeat.</p>
+                                <div class="flex gap-3 items-center mt-3.5">
                                     <div><img class="h-6 w-6 rounded-[50%]" src="" alt=""></div>
                                     <div class="flex flex-col gap-1.5">
-                                        <h5></h5>
-                                        <p></p>
+                                        <h5>PraiseGod Sakaso</h5>
+                                        <p>Lagos State</p>
                                     </div>
                                 </div>
                             </div>
@@ -248,24 +287,30 @@
                 </div>
                 
             </section>
-            <footer>
-                <div class="px-body">
+            <footer class="bg-footer-bg text-footer">
+                <div class="md:px-desktop px-mobile py-12">
                     <div>
                         <!-- logo and brand name plus a write-up -->
                         <div>
-                            <img src="" alt="">
-                            <p></p>
+                            <img src="" alt="Logo">
+                            <p class="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum provident distinctio.</p>
                         </div>
                         <!-- contact details -->
-                        <div></div>
+                        <div class="my-10">
+                            <h3 class="text-h3 font-bold mb-6 text-white">Contact Info</h3>
+                            <p class="mb-2.5">📍 Indorama, Eleme, Rivers State</p>
+                            <p class="mb-2.5">📞 +234 900 000 7890</p>
+                            <p class="mb-2.5">✉️ info@eldekintsglobals.com</p>
+                            <p>Mon to Fri 9:00AM - 5:00PM</p>
+                        </div>
                         <!-- these covers the practice area -->
                         <div></div>
                         <div></div>
                     </div>
                     <hr>
-                    <div>
-                        <p></p>
-                        <p></p>
+                    <div class="flex flex-col items-center gap-5 mt-6">
+                        <p>&copy; 2025 Eldekints Globals. All rights reserved.</p>
+                        <p>Powered by <a href="http://" target="_blank" rel="noopener noreferrer">The Craftors</a></p>
                     </div>
                 </div>
                 

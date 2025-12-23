@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @theme {
-    --padding-body: 195px;
-    --background-image-hero: url("../img/hero-bg.jpg")
+    --padding-desktop: 195px;
+    --padding-mobile: 32px;
+    --text-h3: 1.1875rem; /* 19px */
+    --background-image-hero: url("../img/hero-bg.jpg");
+    --background-image-why-choose-us: url("../img/why-choose-us-bg.jpg");
+    --background-image-testimonials: url("../img/testimonials-bg.jpg");
+    --color-primary: #4A2F1B;
+    --color-footer:#a19e9e;
+    --color-footer-bg: #181717ee;
+    --color-secondary: #D2B48C;
 }
 /* primary color: #b1976b brown... change this to match the company's logo later */
