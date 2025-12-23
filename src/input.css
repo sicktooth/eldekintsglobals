@@ -3,8 +3,8 @@
     --padding-desktop: 195px;
     --padding-mobile: 32px;
     --text-h3: 1.1875rem; /* 19px */
-    --background-image-hero: url("../img/hero-bg.jpg");
-    --background-image-why-choose-us: url("../img/why-choose-us-bg.jpg");
+    --background-image-hero: url("../img/hero_img.png");
+    --background-image-why-choose-us: url("../img/why_choose_us.png");
     --background-image-testimonials: url("../img/testimonials-bg.jpg");
     --color-primary: #4A2F1B;
     --color-footer:#a19e9e;
