@@ -6,208 +6,281 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./src/output.css" />
   <title>About Us | Eldekints Globals</title>
+
+        <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="font-sans">
+    <body class="font-sans">
 
-  <!-- Header / Hero -->
+    <!-- Header / Hero -->
 
-  <header class="relative bg-hero bg-cover h-[60vh] bg-center bg-no-repeat">
-    <div class="absolute inset-0 bg-gray-900/70"></div>
-    <div class="relative md:px-desktop px-mobile text-white flex flex-col h-full">
-      <nav class="md:py-9 py-4">
-        <div class="flex justify-between items-center">
-          <img src="" alt="logo" />
-          <ul class="gap-10 hidden md:flex items-center">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="text-secondary">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+    <header class="relative bg-hero bg-cover h-[60vh] bg-center bg-no-repeat">
+        <div class="absolute inset-0 bg-gray-900/70"></div>
+        <div class="relative md:px-desktop px-mobile text-white flex flex-col h-full">
+            <nav class="md:py-9 py-4">
+                <div class="flex justify-between items-center">
+                <img src="./img/logo_img.webp" alt="Eldekints Globals logo" loading="lazy" class="h-8 md:h-12 lg:h-14 w-auto object-contain" />
+                <ul class="gap-10 hidden md:flex items-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="text-secondary">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+                <div class="md:hidden">
+                    <button id="mobileNavBtn" type="button" aria-expanded="false" aria-controls="mobileNav" onclick="showMobileNav()" class="cursor-pointer p-2">
+                        <ion-icon id="mobileNavIcon" name="menu"></ion-icon>
+                    </button>
+                </div>
+                </div>
+
+                <!-- Mobile dropdown (hidden on md+). Toggle with showMobileNav() -->
+                <div id="mobileNav" class="md:hidden hidden mt-2">
+                    <div class="bg-gray-800/90 rounded-lg p-4 shadow-lg border border-white/10">
+                        <ul class="flex flex-col gap-3">
+                            <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-gray-700">Home</a></li>
+                            <li><a href="about.html" class="block px-3 py-2 rounded bg-amber-400/10 text-amber-400" aria-current="page">About</a></li>
+                            <li><a href="services.html" class="block px-3 py-2 rounded hover:bg-gray-700">Services</a></li>
+                            <!-- <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-gray-700">Contact</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="mt-auto pb-14 md:w-1/2">
+                <p class="mb-4 flex items-center gap-3 text-secondary before:content-[''] before:block before:w-8 before:h-px before:bg-secondary">
+                About Our Firm
+                </p>
+                <h1 class="md:text-5xl text-3xl font-bold font-serif leading-snug">
+                Trusted Drilling Partners With Years of Proven Experience
+                </h1>
+            </div>
         </div>
-      </nav>
 
-```
-  <div class="mt-auto pb-14 md:w-1/2">
-    <p class="mb-4 flex items-center gap-3 text-secondary before:content-[''] before:block before:w-8 before:h-px before:bg-secondary">
-      About Our Firm
+    </header>
+
+    <!-- About Content -->
+
+    <main>
+
+        <!-- WHO WE ARE -->
+        <section class="relative bg-gray-900 text-white py-24">
+        <div class="absolute inset-0 bg-linear-to-b from-black/70 to-gray-900/90"></div>
+
+        <div class="relative md:px-desktop px-mobile grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+
+            <div>
+            <p class="mb-4 flex items-center gap-3 text-amber-400 uppercase tracking-widest
+                before:content-[''] before:block before:w-10 before:h-px before:bg-amber-400">
+                Who We Are
+            </p>
+
+            <h2 class="text-4xl font-bold mb-6">
+                ELDEKINTS GLOBAL SERVICE LTD
+            </h2>
+
+                <p class="mb-4 text-gray-300 leading-relaxed">
+                    ELDEKINTS GLOBAL SERVICE LTD is an indigenous service provider to the oil and gas industry in
+                    Nigeria. It was incorporated as a limited liability company in Nigeria in 18 of march 2018 to
+                    carry on the business of drilling support for the oil and gas industry; environmental
+                    management; marine logistics and support; and project management. It is also involved in the
+                    business of marketing, supply and trading of crude oil and petroleum products.
+                </p>
+
+            <!-- <p class="text-gray-300 leading-relaxed">
+                Led by a dynamic corporate governance and risk management practices. management team, ELDEKINTS GLOBAL SERVICEIn fulfilling our vision, we shall continue to build and improve LTD has been strategicallythe capacity of the communities we operate in. These
+                positionedaFoundation, we shall always communities will be engaged in competitiveendeavour to be responsible activities that ensure develop-to sustainable achieve advantage to achieve its vision.Thisisfurther enabledbytheproper deployment of good
+            </p> -->
+            </div>
+
+            <div class="relative">
+            <div class="absolute inset-0 bg-amber-400/10 rounded-xl blur-2xl"></div>
+            <img src="./img/team.webp" alt="Our Team" class="block rounded-xl shadow-xl border border-white/10"/>
+            </div>
+
+        </div>
+        </section>
+
+        <!-- MISSION & VISION -->
+        <section class="bg-gray-900 text-white py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12">
+
+            <!-- Mission -->
+            <div class="bg-gray-800/70 backdrop-blur rounded-xl p-10 border border-white/10">
+            <p
+                class="mb-4 flex items-center gap-3 text-amber-400 uppercase tracking-widest
+                before:content-[''] before:block before:w-10 before:h-px before:bg-amber-400"
+            >
+                Our Mission
+            </p>
+
+            <p class="text-gray-300 leading-relaxed">
+                Our mission is to recruit, retain, and reward a high-performance workforce while
+                delivering excellent and innovative services to our clients. We are committed to
+                building capacity within the communities where we operate, ensuring sustainable
+                development, economic empowerment, and responsible corporate citizenship.
+            </p>
+            </div>
+
+            <!-- Vision -->
+            <div class="bg-gray-800/70 backdrop-blur rounded-xl p-10 border border-white/10">
+            <p
+                class="mb-4 flex items-center gap-3 text-amber-400 uppercase tracking-widest
+                before:content-[''] before:block before:w-10 before:h-px before:bg-amber-400"
+            >
+                Our Vision
+            </p>
+
+            <p class="text-gray-300 leading-relaxed">
+                Our vision is to achieve a sustainable competitive advantage as a leading indigenous
+                oil and gas service provider through strong corporate governance, effective risk
+                management, operational excellence, and strict adherence to environmental
+                preservation and safety standards.
+            </p>
+            </div>
+
+        </div>
+        </section>
+
+
+        <!-- WHY CHOOSE US -->
+        <section class="relative bg-gray-900 text-white py-24">
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <div class="relative md:px-desktop px-mobile max-w-7xl mx-auto">
+
+            <div class="mb-16">
+            <p class="mb-4 flex items-center gap-3 text-amber-400 uppercase tracking-widest
+                before:content-[''] before:block before:w-10 before:h-px before:bg-amber-400">
+                Why Choose Us
+            </p>
+
+            <h2 class="text-4xl font-bold">
+                What Sets Us Apart
+            </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+            <div class="bg-gray-800/70 backdrop-blur rounded-xl p-8 border border-white/10 hover:border-amber-400/40 transition">
+                <h3 class="text-xl font-semibold text-amber-400 mb-3">
+                Client-Centered Approach
+                </h3>
+                <p class="text-gray-300">
+                We listen carefully, communicate clearly, and tailor legal strategies to your
+                specific situation.
+                </p>
+            </div>
+
+            <div class="bg-gray-800/70 backdrop-blur rounded-xl p-8 border border-white/10 hover:border-amber-400/40 transition">
+                <h3 class="text-xl font-semibold text-amber-400 mb-3">
+                Quality
+                </h3>
+                <p class="text-gray-300">
+                    In line with the strategic direction of ELDEKINTS GLOBAL SERVICE LTD, we are committed to identifying and meeting the needs and expectations of all interested parties, including customers, regulators, government bodies, shareholders, employees, suppliers, and the community. We deliver this commitment across our onshore/offshore pipeline laying, fabrication, drilling services, petroleum supply, equipment leasing, and procurement activities, while continually improving our quality performance and management systems through innovation and effective corrective actions
+                </p>
+                
+            </div>
+
+            <div class="bg-gray-800/70 backdrop-blur rounded-xl p-8 border border-white/10 hover:border-amber-400/40 transition">
+                <h3 class="text-xl font-semibold text-amber-400 mb-3">
+                Local Content Support
+                </h3>
+                <p class="text-gray-300">
+                In support of the Nigerian Oil & Gas Industry Content Act, which was signed into law on the 22nd April 2010, we are committed to maximizing in a sustainable manner the use of Nigerian human resources, materials, equipment and services in our operations without compromising the company’s values, quality, health, and safety andenvironment standards.
+                </p>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- CTA -->
+        <!-- <section class="relative bg-gray-800 text-white py-24 text-center">
+        <div class="absolute inset-0 bg-linear-to-r from-black/60 to-gray-900/60"></div>
+
+        <div class="relative md:px-desktop px-mobile max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-6">
+            Need Legal Guidance?
+            </h2>
+            <p class="mb-10 text-gray-300">
+            Let us help you take the next step with confidence.
+            </p>
+
+            <a href="contact.html">
+            <button
+                class="px-10 py-4 rounded-md bg-amber-400 text-gray-900 font-semibold hover:bg-amber-300 transition shadow-lg">
+                Book a Consultation
+            </button>
+            </a>
+        </div>
+        </section> -->
+        <section class="py-16 bg-gray-900 text-white">
+  <div class="md:px-desktop px-mobile text-center max-w-3xl mx-auto">
+    
+    <p class="mb-4 flex justify-center items-center gap-3 text-secondary
+      before:content-[''] before:block before:w-10 before:h-px before:bg-secondary
+      after:content-[''] after:block after:w-10 after:h-px after:bg-secondary">
+      Oil & Gas Services
     </p>
-    <h1 class="md:text-5xl text-3xl font-bold font-serif leading-snug">
-      Trusted Legal Partners With Years of Proven Experience
-    </h1>
-  </div>
-</div>
-```
 
-  </header>
-
-  <!-- About Content -->
-
-  <main>
-
-<!-- WHO WE ARE -->
-<section class="relative bg-gray-900 text-white py-24">
-  <div class="absolute inset-0 bg-linear-to-b from-black/70 to-gray-900/90"></div>
-
-  <div class="relative md:px-desktop px-mobile grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
-
-    <div>
-      <p class="mb-4 flex items-center gap-3 text-amber-400 uppercase tracking-widest
-        before:content-[''] before:block before:w-10 before:h-px before:bg-amber-400">
-        Who We Are
-      </p>
-
-      <h2 class="text-4xl font-bold mb-6">
-        ELDEKINTS GLOBAL SERVICE LTD
-      </h2>
-
-        <p class="mb-4 text-gray-300 leading-relaxed">
-            ELDEKINTS GLOBAL SERVICE LTD is an indigenous service provider to the oil and gas industry in
-            Nigeria. It was incorporated as a limited liability company in Nigeria in 18 of march 2018 to
-            carry on the business of drilling support for the oil and gas industry; environmental
-            management; marine logistics and support; and project management. It is also involved in the
-            business of marketing, supply and trading of crude oil and petroleum products.
-        </p>
-
-      <p class="text-gray-300 leading-relaxed">
-        Led by a dynamic corporate governance and risk management practices. management team, ELDEKINTS GLOBAL SERVICEIn fulfilling our vision, we shall continue to build and improve LTD has been strategicallythe capacity of the communities we operate in. These
-        positionedaFoundation, we shall always communities will be engaged in competitiveendeavour to be responsible activities that ensure develop-to sustainable achieve advantage to achieve its vision.Thisisfurther enabledbytheproper deployment of good
-      </p>
-    </div>
-
-    <div class="relative">
-      <div class="absolute inset-0 bg-amber-400/10 rounded-xl blur-2xl"></div>
-      <img
-        src="../eldekintsglobals/img/team.jpg" alt="Our Team"
-        class="rounded-xl shadow-xl border border-white/10"
-      />
-    </div>
-
-  </div>
-</section>
-
-<!-- MISSION & VISION -->
-<section class="bg-gray-900 text-white py-24">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12">
-
-    <!-- Mission -->
-    <div class="bg-gray-800/70 backdrop-blur rounded-xl p-10 border border-white/10">
-      <p
-        class="mb-4 flex items-center gap-3 text-amber-400 uppercase tracking-widest
-        before:content-[''] before:block before:w-10 before:h-px before:bg-amber-400"
-      >
-        Our Mission
-      </p>
-
-      <p class="text-gray-300 leading-relaxed">
-        Our mission is to recruit, retain, and reward a high-performance workforce while
-        delivering excellent and innovative services to our clients. We are committed to
-        building capacity within the communities where we operate, ensuring sustainable
-        development, economic empowerment, and responsible corporate citizenship.
-      </p>
-    </div>
-
-    <!-- Vision -->
-    <div class="bg-gray-800/70 backdrop-blur rounded-xl p-10 border border-white/10">
-      <p
-        class="mb-4 flex items-center gap-3 text-amber-400 uppercase tracking-widest
-        before:content-[''] before:block before:w-10 before:h-px before:bg-amber-400"
-      >
-        Our Vision
-      </p>
-
-      <p class="text-gray-300 leading-relaxed">
-        Our vision is to achieve a sustainable competitive advantage as a leading indigenous
-        oil and gas service provider through strong corporate governance, effective risk
-        management, operational excellence, and strict adherence to environmental
-        preservation and safety standards.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- WHY CHOOSE US -->
-<section class="relative bg-gray-900 text-white py-24">
-  <div class="absolute inset-0 bg-black/60"></div>
-
-  <div class="relative md:px-desktop px-mobile max-w-7xl mx-auto">
-
-    <div class="mb-16">
-      <p class="mb-4 flex items-center gap-3 text-amber-400 uppercase tracking-widest
-        before:content-[''] before:block before:w-10 before:h-px before:bg-amber-400">
-        Why Choose Us
-      </p>
-
-      <h2 class="text-4xl font-bold">
-        What Sets Us Apart
-      </h2>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-10">
-
-      <div class="bg-gray-800/70 backdrop-blur rounded-xl p-8 border border-white/10 hover:border-amber-400/40 transition">
-        <h3 class="text-xl font-semibold text-amber-400 mb-3">
-          Client-Centered Approach
-        </h3>
-        <p class="text-gray-300">
-          We listen carefully, communicate clearly, and tailor legal strategies to your
-          specific situation.
-        </p>
-      </div>
-
-      <div class="bg-gray-800/70 backdrop-blur rounded-xl p-8 border border-white/10 hover:border-amber-400/40 transition">
-        <h3 class="text-xl font-semibold text-amber-400 mb-3">
-          Transparent Fees
-        </h3>
-        <p class="text-gray-300">
-          No hidden charges. We maintain honesty and clarity in all financial dealings.
-        </p>
-      </div>
-
-      <div class="bg-gray-800/70 backdrop-blur rounded-xl p-8 border border-white/10 hover:border-amber-400/40 transition">
-        <h3 class="text-xl font-semibold text-amber-400 mb-3">
-          Proven Track Record
-        </h3>
-        <p class="text-gray-300">
-          Our growing list of satisfied clients reflects our dedication and results.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="relative bg-gray-800 text-white py-24 text-center">
-  <div class="absolute inset-0 bg-linear-to-r from-black/60 to-gray-900/60"></div>
-
-  <div class="relative md:px-desktop px-mobile max-w-3xl mx-auto">
-    <h2 class="text-4xl font-bold mb-6">
-      Need Legal Guidance?
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+      Powering Safe, Efficient, and Reliable Oil Drilling Operations
     </h2>
-    <p class="mb-10 text-gray-300">
-      Let us help you take the next step with confidence.
+
+    <p class="text-gray-300 mb-10 leading-relaxed">
+      We provide dependable oil drilling support services backed by technical expertise,
+      safety compliance, and operational excellence. Partner with us to deliver projects
+      that perform under the toughest conditions.
     </p>
 
-    <a href="contact.html">
-      <button
-        class="px-10 py-4 rounded-md bg-amber-400 text-gray-900 font-semibold hover:bg-amber-300 transition shadow-lg">
-        Book a Consultation
-      </button>
-    </a>
+    <div class="flex flex-col md:flex-row justify-center gap-5">
+      <a href="mailto:eldekintsglobal2024@gmail.com">
+        <button class="px-8 py-3 rounded-md bg-secondary text-primary font-semibold
+          shadow-md hover:bg-[#C3A574] hover:shadow-lg active:scale-95 transition">
+          Request a Project Consultation
+        </button>
+      </a>
+
+      <a href="tel:+2347061831151">
+        <button class="px-8 py-3 rounded-md border border-secondary text-secondary
+          hover:bg-secondary hover:text-primary transition">
+          Talk to Our Technical Team
+        </button>
+      </a>
+    </div>
+
   </div>
 </section>
 
-  </main>
+    </main>
 
-  <!-- Footer -->
+    <!-- Footer -->
 
-  <footer class="bg-footer-bg text-footer">
-    <div class="md:px-desktop px-mobile py-12 text-center">
-      <p>&copy; 2025 Eldekints Globals. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer class="bg-footer-bg text-footer">
+        <div class="md:px-desktop px-mobile py-12">
+                    <div>
+                        <!-- contact details -->
+                        <div class="my-10">
+                            <h3 class="text-h3 font-bold mb-6 text-white">Contact Info</h3>
+                            <p class="mb-2.5">📍 No 61 craft road Agbonchia eleme rivers state</p>
+                            <p class="mb-2.5">📞 <a href="tel:+2347061831151">+2347061831151</a></p>
+                            <p class="mb-2.5">✉️ <a href="mailto:eldekintsglobal2024@gmail.com">eldekintsglobal2024@gmail.com</a></p>
+                            <p>Mon to Fri 9:00AM - 5:00PM</p>
+                        </div>
+                        <!-- these covers the practice area -->
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <hr>
+                    <div class="flex flex-col items-center gap-5 mt-6">
+                        <p>&copy; 2025 Eldekints Globals. All rights reserved.</p>
+                        <p>Powered by <a href="https://wa.me/2349014902159" target="_blank" rel="noopener noreferrer">The Craftors</a></p>
+                    </div>
+                </div>
+    </footer>
+
+<script src="./src/index.js">
+</script>
 
 </body>
 </html>

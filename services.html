@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./src/output.css" />
-  <title>About Us | Eldekints Globals</title>
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  <title>Services | Eldekints Globals</title>
 </head>
 <body class="font-sans">
 
@@ -15,28 +17,42 @@
     <div class="absolute inset-0 bg-gray-900/70"></div>
     <div class="relative md:px-desktop px-mobile text-white flex flex-col h-full">
       <nav class="md:py-9 py-4">
-        <div class="flex justify-between items-center">
-          <img src="" alt="logo" />
-          <ul class="gap-10 hidden md:flex items-center">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="text-secondary">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+                <div class="flex justify-between items-center">
+                <img src="./img/logo_img.webp" alt="Eldekints Globals logo" loading="lazy" class="h-8 md:h-12 lg:h-14 w-auto object-contain" />
+                <ul class="gap-10 hidden md:flex items-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="services.html" class="text-secondary">Services</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+                <div class="md:hidden">
+                    <button id="mobileNavBtn" type="button" aria-expanded="false" aria-controls="mobileNav" onclick="showMobileNav()" class="cursor-pointer p-2">
+                        <ion-icon id="mobileNavIcon" name="menu"></ion-icon>
+                    </button>
+                </div>
+                </div>
 
-```
+                <!-- Mobile dropdown (hidden on md+). Toggle with showMobileNav() -->
+                <div id="mobileNav" class="md:hidden hidden mt-2">
+                    <div class="bg-gray-800/90 rounded-lg p-4 shadow-lg border border-white/10">
+                        <ul class="flex flex-col gap-3">
+                            <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-gray-700">Home</a></li>
+                            <li><a href="about.html" class="block px-3 py-2 rounded ">About</a></li>
+                            <li><a href="services.html" class="text-amber-400 block px-3 py-2 rounded hover:bg-gray-700 bg-amber-400/10" aria-current="page">Services</a></li>
+                            <!-- <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-gray-700">Contact</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
   <div class="mt-auto pb-14 md:w-1/2">
     <p class="mb-4 flex items-center gap-3 text-secondary before:content-[''] before:block before:w-8 before:h-px before:bg-secondary">
       About Our Firm
     </p>
     <h1 class="md:text-5xl text-3xl font-bold font-serif leading-snug">
-      Trusted Legal Partners With Years of Proven Experience
+      Trusted Drilling Partners With Years of Proven Experience
     </h1>
   </div>
 </div>
-```
 
   </header>
 
@@ -167,11 +183,31 @@
 
   <!-- Footer -->
 
-  <footer class="bg-footer-bg text-footer">
-    <div class="md:px-desktop px-mobile py-12 text-center">
-      <p>&copy; 2025 Eldekints Globals. All rights reserved.</p>
-    </div>
-  </footer>
+  
+    
+    <footer class="bg-footer-bg text-footer">
+        <div class="md:px-desktop px-mobile py-12">
+                    <div>
+                        <!-- contact details -->
+                        <div class="my-10">
+                            <h3 class="text-h3 font-bold mb-6 text-white">Contact Info</h3>
+                            <p class="mb-2.5">📍 No 61 craft road Agbonchia eleme rivers state</p>
+                            <p class="mb-2.5">📞 <a href="tel:+2347061831151">+2347061831151</a></p>
+                            <p class="mb-2.5">✉️ <a href="mailto:eldekintsglobal2024@gmail.com">eldekintsglobal2024@gmail.com</a></p>
+                            <p>Mon to Fri 9:00AM - 5:00PM</p>
+                        </div>
+                        <!-- these covers the practice area -->
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <hr>
+                    <div class="flex flex-col items-center gap-5 mt-6">
+                        <p>&copy; 2025 Eldekints Globals. All rights reserved.</p>
+                        <p>Powered by <a href="https://wa.me/2349014902159" target="_blank" rel="noopener noreferrer">The Craftors</a></p>
+                    </div>
+                </div>
+    </footer>
 
 </body>
+<script src="./src/index.js"></script>
 </html>
