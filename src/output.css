@@ -828,6 +828,12 @@
       height: 1px;
     }
   }
+  .before\:w-5 {
+    &::before {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 5);
+    }
+  }
   .before\:w-8 {
     &::before {
       content: var(--tw-content);
@@ -1061,6 +1067,11 @@
   .md\:gap-6 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:gap-9 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 9);
     }
   }
   .md\:gap-10 {
