@@ -3,10 +3,10 @@
     --padding-desktop: 195px;
     --padding-mobile: 32px;
     --text-h3: 1.1875rem; /* 19px */
-    --background-image-hero: url("../img/hero_img.png");
-    --background-image-why-choose-us: url("../img/why_choose_us.png");
-    --background-image-testimonials: url("../img/testimonials-bg.jpg");
-    /* --background-quality: url("../img/quality.png"); */
+    --background-image-hero: url("../img/hero_img.webp");
+    --background-image-why-choose-us: url("../img/why_choose_us.webp");
+    --background-image-testimonials: url("../img/testimonials-bg.webp");
+    --background-image-about-why-choose-us: url("../img/about_why-choose-us.webp");
     --color-primary: #4A2F1B;
     --color-footer:#a19e9e;
     --color-footer-bg: #181717ee;
